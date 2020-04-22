@@ -1,4 +1,4 @@
-# Python/R conversion cheatsheet: How to do everything you do in Python in R and vice verse
+# Python/R conversion cheatsheet: How to do everything you do in Python in R and vice versa
 
 <br>
 
