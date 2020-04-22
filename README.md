@@ -186,3 +186,216 @@ x = [5, 2, 3, 1, 4]
 del x[3]    #removes 1
 ```
 <br>
+
+### Sorting a vector/array (R) or list (Python)
+
+#### R
+```r
+x <- c(5, 2, 3, 1, 4)
+x <- sort(x)
+```
+
+#### Python 
+```python
+x = [5, 2, 3, 1, 4]
+x.sort()
+```
+<br>
+
+### Reverse the order of a vector/array (R) or list (Python)
+
+#### R
+```r
+x <- c(5, 2, 3, 1, 4)
+x <- rev(x)
+```
+
+#### Python 
+```python
+x = [5, 2, 3, 1, 4]
+x.reverse()
+```
+<br>
+
+### Making an empty vector/array (R) or list (Python)
+
+#### R
+```r
+x <- NULL
+```
+
+#### Python 
+```python
+x = []
+```
+<br>
+
+### Looping through a vector/array (R) or list (Python)
+
+#### R
+```r
+x <- c(5, 2, 3, 1, 4)
+for(i in x){
+    print(i)
+}
+```
+
+#### Python 
+```python
+x = [5, 2, 3, 1, 4]
+for i in x:
+    print(i)
+```
+<br>
+
+### Making a continuous sequence of integers
+
+#### R
+```r
+x <- 1:10    #also, seq(1, 10)
+```
+
+#### Python 
+```python
+x = range(1, 11)
+```
+<br>
+
+### Making a non-continuous sequence of integers
+
+#### R
+```r
+x <- seq(1, 11, 2)    #1, 3, 5, 7, 11
+```
+
+#### Python 
+```python
+range(1, 12, 2)    #1, 3, 5, 7, 11
+```
+<br>
+
+### Squaring all elements in a vector/array (R) or list (Python)
+
+#### R
+```r
+x <- c(5, 2, 3, 1, 4)
+x^2    #25, 4, 9, 1, 16
+```
+
+#### Python 
+```python
+x = [5, 2, 3, 1, 4]
+for i in x:
+    print(i**2)    #25, 4, 9, 1, 16
+```
+<br>
+
+### Cubing all elements in a vector/array (R) or list (Python)
+
+#### R
+```r
+x <- c(5, 2, 3, 1, 4)
+x^3    #125, 8, 27, 1, 64
+```
+
+#### Python 
+```python
+x = [5, 2, 3, 1, 4]
+for i in x:
+    print(i**3)    #125, 8, 27, 1, 64
+```
+<br>
+
+### Suming all elements in a vector/array (R) or list (Python)
+
+#### R
+```r
+x <- c(5, 2, 3, 1, 4)
+sum(x)    #15
+```
+
+#### Python 
+```python
+x = [5, 2, 3, 1, 4]
+sum(x)    #15
+```
+<br>
+
+### Subsetting a vector/array (R) or list (Python)
+
+#### Between two indices:
+
+#### R
+```r
+x <- c(5, 2, 3, 1, 4)
+x[2:4]    #2, 3, 1
+```
+
+#### Python 
+```python
+x = [5, 2, 3, 1, 4]
+x[1:4]     #2, 3, 1
+```
+<br>
+
+#### From the beginning to an index:
+
+#### R
+```r
+x <- c(5, 2, 3, 1, 4)
+x[1:4]    #5, 2, 3, 1
+```
+
+#### Python 
+```python
+x = [5, 2, 3, 1, 4]
+x[ :4]     #5, 2, 3, 1
+```
+<br>
+
+#### From an index to the end:
+
+#### R
+```r
+x <- c(5, 2, 3, 1, 4)
+x[2:length(x)]    #2, 3, 1, 4
+```
+
+#### Python 
+```python
+x = [5, 2, 3, 1, 4]
+x[1:]     #2, 3, 1, 4
+```
+<br>
+
+<br>
+
+#### From the end to the end-n (e.g., n=2):
+
+#### R
+```r
+x <- c(5, 2, 3, 1, 4)
+x[(length(x)-2):length(x)]    #3, 1, 4
+```
+
+#### Python 
+```python
+x = [5, 2, 3, 1, 4]
+x[-2: ]     #3, 1, 4
+```
+<br>
+
+### Copying a vector/array (R) or list (Python)
+
+#### R
+```r
+x <- c(5, 2, 3, 1, 4)
+y <- x
+```
+
+#### Python 
+```python
+x = [5, 2, 3, 1, 4]
+y = [:]
+```
+<br>
