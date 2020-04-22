@@ -92,3 +92,63 @@ as.character(3)
 str(3)
 ```
 <br>
+
+### Making a vector/array (R) or list (Python)
+
+#### R
+```r
+x <- c(5, 2, 3, 1, 4)
+```
+
+#### Python 
+```python
+x = [5, 2, 3, 1, 4]
+```
+<br>
+
+### Getting the length of a vector/array (R) or list (Python)
+
+#### R
+```r
+x <- c(5, 2, 3, 1, 4)
+length(x)
+```
+
+#### Python 
+```python
+x = [5, 2, 3, 1, 4]
+len(x)
+```
+<br>
+
+### Accessing the last element in a vector/array (R) or list (Python)
+
+#### R
+```r
+x <- c(5, 2, 3, 1, 4)
+x[length(x)]
+```
+
+#### Python 
+```python
+x = [5, 2, 3, 1, 4]
+x[-1]
+```
+<br>
+
+### Modifying an element in a vector/array (R) or list (Python)
+
+Note: indices start at 1 in R and 0 in Python
+
+#### R
+```r
+x <- c(5, 2, 3, 1, 4)
+x[1] <- 3    #3, 2, 3, 1, 4
+```
+
+#### Python 
+```python
+x = [5, 2, 3, 1, 4]
+x[0] = 3    #3, 2, 3, 1, 4
+```
+<br>
