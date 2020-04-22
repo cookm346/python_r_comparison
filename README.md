@@ -152,3 +152,37 @@ x = [5, 2, 3, 1, 4]
 x[0] = 3    #3, 2, 3, 1, 4
 ```
 <br>
+
+### Appending an element to a vector/array (R) or list (Python)
+
+Note: indices start at 1 in R and 0 in Python
+
+#### R
+```r
+x <- c(5, 2, 3, 1, 4)
+x <- c(x, 7)
+```
+
+#### Python 
+```python
+x = [5, 2, 3, 1, 4]
+x.append(7)
+```
+<br>
+
+### Removing an element in a vector/array (R) or list (Python)
+
+Note: indices start at 1 in R and 0 in Python
+
+#### R
+```r
+x <- c(5, 2, 3, 1, 4)
+x <- x[-4]    #removes 1
+```
+
+#### Python 
+```python
+x = [5, 2, 3, 1, 4]
+del x[3]    #removes 1
+```
+<br>
