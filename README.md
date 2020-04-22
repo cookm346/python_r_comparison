@@ -1,5 +1,7 @@
 # Python/R conversion cheatsheet: How to do everything you do in Python in R and vice verse
 
+<br>
+
 ### Variable assignment
 
 #### R
@@ -13,18 +15,29 @@ x = 2
 ```
 <br>
 
-### Convert text to lowercase
+### Exponentials
 
 #### R
 ```r
-s <- "THIS is a STRING"
-tolower(s)
+2^3    #8
 ```
 
 #### Python 
 ```python
-s = "THIS is a STRING"
-s.lower()
+2**3    #8
+```
+<br>
+
+### Convert text to lowercase
+
+#### R
+```r
+tolower("THIS is a STRING")
+```
+
+#### Python 
+```python
+"THIS is a STRING".lower()
 ```
 <br>
 
@@ -32,13 +45,50 @@ s.lower()
 
 #### R
 ```r
-s <- "THIS is a STRING"
-toupper(s)
+toupper("THIS is a STRING")
 ```
 
 #### Python 
 ```python
-s = "THIS is a STRING"
-s.upper()
+"THIS is a STRING".upper()
+```
+<br>
+
+### Join two or more strings with spaces
+
+#### R
+```r
+paste("join", "these", "strings", sep=" ")
+```
+
+#### Python 
+```python
+"join" + " " + "these" + " " + "strings"
+```
+<br>
+
+### Remove leading or trailing whitespace from a string
+
+#### R
+```r
+trimws("   example string    ")
+```
+
+#### Python 
+```python
+"   example string    ".strip()
+```
+<br>
+
+### Convert numeric value to string
+
+#### R
+```r
+as.character(3)
+```
+
+#### Python 
+```python
+str(3)
 ```
 <br>
