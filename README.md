@@ -423,3 +423,31 @@ else:
     print("1 < 3")
 ```
 <br>
+
+### Logical operators
+
+#### Or:
+
+#### R
+```r
+2 > 1 | 3 > 4    #TRUE
+```
+
+#### Python 
+```python
+2 > 1 or 3 > 4    #True
+```
+<br>
+
+#### And:
+
+#### R
+```r
+2 > 1 & 3 > 4    #FALSE
+```
+
+#### Python 
+```python
+2 > 1 & 3 > 4    #False
+```
+<br>
