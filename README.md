@@ -399,3 +399,27 @@ x = [5, 2, 3, 1, 4]
 y = [:]
 ```
 <br>
+
+### If statements
+
+#### R
+```r
+if(1 > 3){
+    print("1 > 3")
+} else {
+    print("1 < 3")
+}
+```
+#### alternatively:
+```r
+ifelse(1 > 3, "1 > 3", "1 < 3")
+```
+
+#### Python 
+```python
+if 1 > 3:
+    print("1 > 3")
+else:
+    print("1 < 3")
+```
+<br>
