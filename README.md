@@ -400,27 +400,73 @@ y = [:]
 ```
 <br>
 
-### If statements
+### Booleans
 
 #### R
 ```r
-if(1 > 3){
-    print("1 > 3")
-} else {
-    print("1 < 3")
-}
-```
-#### alternatively:
-```r
-ifelse(1 > 3, "1 > 3", "1 < 3")
+TRUE
+FALSE
 ```
 
 #### Python 
 ```python
-if 1 > 3:
-    print("1 > 3")
+True
+False
+```
+<br>
+
+
+### If else statements
+
+#### R
+```r
+x <- 1
+if(x > 3){
+    print("x > 3")
+} else {
+    print("x < 3")
+}
+```
+#### alternatively:
+```r
+x <- 1
+ifelse(x > 3, "x > 3", "x < 3")
+```
+
+#### Python 
+```python
+x <- 1
+if x > 3:
+    print("x > 3")
 else:
-    print("1 < 3")
+    print("x < 3")
+```
+<br>
+
+### If else-if else statements
+
+#### R
+```r
+x <- 1
+if(x > 3){
+    print("x > 3")
+} else if (x < 3)  {
+    print("x < 3")
+} else {
+    print("x == 3")
+}
+```
+
+#### Python 
+```python
+x = 1
+if x > 3:
+    print("x > 3")
+elif x < 3:
+    print("x < 3")
+else:
+    print("x == 3")
+}
 ```
 <br>
 
@@ -449,5 +495,35 @@ else:
 #### Python 
 ```python
 2 > 1 & 3 > 4    #False
+```
+<br>
+
+### Checking if a value is in a vector/array (R) or list (Python)
+
+#### R
+```r
+x <- c(5, 2, 3, 1, 4)
+1 %in% x
+```
+
+#### Python 
+```python
+x = [5, 2, 3, 1, 4]
+1 in x
+```
+<br>
+
+### Checking if a value is NOT in a vector/array (R) or list (Python)
+
+#### R
+```r
+x <- c(5, 2, 3, 1, 4)
+! 1 %in% x
+```
+
+#### Python 
+```python
+x = [5, 2, 3, 1, 4]
+1 not in x
 ```
 <br>
