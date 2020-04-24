@@ -385,7 +385,7 @@ x[-2: ]     #3, 1, 4
 ```
 <br>
 
-### Copying a vector/array (R) or list (Python)
+### Making a (deep) copy of a vector/array (R) or list (Python)
 
 #### R
 ```r
