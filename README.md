@@ -527,3 +527,104 @@ x = [5, 2, 3, 1, 4]
 1 not in x
 ```
 <br>
+
+### Building a empty list (R) or Dictionary (Python)
+
+#### R
+```r
+x <- list()
+```
+
+#### Python 
+```python
+x = {}
+```
+<br>
+
+### Accessing elements in a list (R) or Dictionary (Python)
+
+#### R
+```r
+x <- list(y = 2, z = c(1, 2, 3))
+x[["y"]]
+```
+
+#### Python 
+```python
+x = {'y': 2, 'z': [1, 2, 3]}
+x["y"]
+```
+<br>
+
+### Building a list (R) or Dictionary (Python)
+
+#### R
+```r
+x <- list(y = 2, z = c(1, 2, 3))
+```
+
+#### Python 
+```python
+x = {'y': 2, 'z': [1, 2, 3]}
+```
+<br>
+
+### Accessing elements in a list (R) or Dictionary (Python)
+
+#### R
+```r
+x <- list(y = 2, z = c(1, 2, 3))
+x[["y"]]
+```
+
+#### Python 
+```python
+x = {'y': 2, 'z': [1, 2, 3]}
+x["y"]
+```
+<br>
+
+### Modifying elements in a list (R) or Dictionary (Python)
+
+#### R
+```r
+x <- list(y = 2, z = c(1, 2, 3))
+x[["z"]][1] <- 5    #z = 5, 2, 3
+```
+
+#### Python 
+```python
+x = {'y': 2, 'z': [1, 2, 3]}
+x["z"][0] = 5    #z = 5, 2, 3
+```
+<br>
+
+### Adding new elements in a list (R) or Dictionary (Python)
+
+#### R
+```r
+x <- list(y = 2, z = c(1, 2, 3))
+x[["w"]] <- 1    #or, x$w <- 1
+```
+
+#### Python 
+```python
+x = {'y': 2, 'z': [1, 2, 3]}
+x["w"] = 1
+```
+<br>
+
+### Removing elements in a list (R) or Dictionary (Python)
+
+#### R
+```r
+x <- list(y = 2, z = c(1, 2, 3))
+x[["z"]] <- NULL
+```
+
+#### Python 
+```python
+x = {'y': 2, 'z': [1, 2, 3]}
+del x["z"]
+```
+<br>
